@@ -1,4 +1,3 @@
-// Core character with stats and base logic
 public class Character {
     protected String name;
     protected String major;
@@ -38,6 +37,54 @@ public class Character {
 
     public void restoreMP(int amt) {
         currentMP = Math.min(currentMP + amt, maxMP);
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getMajor() {
+        return major;
+    }
+
+    public String getRuneAffinity() {
+        return runeAffinity;
+    }
+
+    public String getBackground() {
+        return background;
+    }
+
+    public int getMaxHP() {
+        return maxHP;
+    }
+
+    public int getCurrentHP() {
+        return currentHP;
+    }
+
+    public int getMaxMP() {
+        return maxMP;
+    }
+
+    public int getCurrentMP() {
+        return currentMP;
+    }
+
+    public int getStrength() {
+        return strength;
+    }
+
+    public int getIntelligence() {
+        return intelligence;
+    }
+
+    public int getCharisma() {
+        return charisma;
+    }
+
+    public int getWisdom() {
+        return wisdom;
     }
 
     public void displayStats() {

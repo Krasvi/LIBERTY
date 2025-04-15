@@ -44,3 +44,5 @@ public class RuneAbility {
 
         return true;
     }
+
+}
