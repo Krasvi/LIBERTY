@@ -62,7 +62,7 @@ public class GameUI {
         };
         player = new PlayerCharacter(name, major, runeAffinity, "Fresh initiate", 100, 50, 5, 6, 4, 5);
         sceneManager = new SceneManager();
-        sceneManager.addNormalScenes(SceneLibrary.loadNormalScenes(sceneManager, player));
+        sceneManager.addNormalScenes(SceneLibrary.loadAllScenes(sceneManager, player));
     }
 
     public void showFirstScene() {
